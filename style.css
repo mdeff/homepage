@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,700&display=swap');
+
+html {
+    font-family: "Source Serif 4", serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.4;
+	max-width: 800px;
+	margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text {
+	text-align: justify;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/*
+.unbehaved-element {
+    font-size: 2em;
+}
+@media(max-width: 1580px) {
+  html {
+    font-size: 18px;
+  }
+  .unbehaved-element {
+    font-size: 1.9em;
+  }
+}
+@media(max-width: 980px) {
+  html {
+    font-size: 16px;
+  }
+}
+*/
